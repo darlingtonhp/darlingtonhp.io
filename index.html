@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--custom css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--header design-->
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services" >Services</a>
+            <a href="#portfolio" >Portfolio</a>
+            <a href="#contact" >Contact</a>
+        </nav>
+
+    </header>
+
+    <!--home section design design-->
+
+    <section class="home" id="home">
+        <div class ="home-content">
+            <h3>Hello I am </h3>
+            <h1>Darlington T Hapanamambo</h1>
+            <h3>I am a <span class="multiple-text"></span> </h3>
+            <p>Welcome to my portfolio! I am a passionate Computer Science <br>
+                graduate with a strong interest in mobile application development.<br> 
+                Coding is not just a career choice for me; it is a true passion. <br> 
+                I find joy in solving complex problems and turning ideas into functional <br> 
+                and user-friendly applications.</p>
+                <div class="social-media">
+                    <audio id = "myAudio" src="assets/note1.wav"></audio>
+                    <a href="https://www.facebook.com/darlhp/" onclick="playSound()"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://twitter.com/_darlingtonhp/" onclick="playSound()"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.instagram.com/darlingtonhp/" onclick="playSound()"><i class="bx bxl-instagram-alt"></i></a>
+                    <a href="https://www.linkedin.com/in/darlington-takunda-hapanamambo-049a97170/"
+                     onclick="playSound()">
+                        <i class="bx bxl-linkedin"></i></a>
+                </div>
+                <!--
+                    Use the download attribute to signal that the resource
+                    should be downloaded rather than opened in the browser
+                  -->
+                <a href="cv/Darlington T Hapanamambo CV Software Developer.pdf" 
+                download="cv/Darlington T Hapanamambo CV Software Developer.pdf" class="btn">Download CV 📥</a>
+        </div>
+        <div class="home-img">
+            <img src="images/home.jpg" alt="Profile Image">
+        </div>
+    </section>
+    <!-- About section Design -->
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="images/about.jpg" alt="About me Image">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Mobile Application Developer!</h3>
+        <p>Darlington Takunda Hapanamambo is a skilled mobile application developer 
+            specializing in Flutter.<br> With a strong passion for technology and innovation, 
+            I have honed excellent skills in creating user-friendly and visually 
+            appealing mobile applications.<br> Beyond my technical skills, I have a diverse 
+            range of interests.Soccer has always been a big part of my life, and I love
+            watching matches and engaging in conversations about the sport.<br> This
+            passion for soccer has taught me the importance of teamwork, dedication, 
+            and perseverance, which I bring to every project I work on.</p><br>
+    <div id="more" style="display: none;">
+        <p> Web designing is another area that fascinates me. I enjoy creating visually
+            appealing and intuitive websites that provide a seamless user experience. <br>
+            The combination of my coding skills and eye for design allows me to create
+            websites that not only look great but also function flawlessly.<br> In addition
+            to my technical abilities, I possess a positive character and attitude.<br> I 
+            believe that a positive mind-set is crucial in overcoming challenges and <br>
+            fostering a collaborative work environment.<br> I am always eager to learn and
+            grow, and I approach every project with enthusiasm and a willingness to <br>
+            adapt.</p><br> 
+        <p>I am constantly seeking new opportunities to expand my knowledge and expertise 
+           in mobile application development. <br>I am excited to contribute my skills and
+           creativity to bring innovative solutions to life.<br> If you are looking for a 
+           dedicated and passionate mobile application developer with a knack for web
+           design, I would be thrilled to collaborate with you. Let us bring your ideas <br>
+           to reality together!</p>
+    </div>
+        <button onclick="readMore()" class="btn">Read More</button>    
+    </div>
+</section>
+
+<!-- services section design -->
+
+<section class="services" id="services">
+    <h2 class="heading">What<span> I do</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bxl-flutter'></i>
+            <h3>Mobile App Development</h3>
+            <p>I specialize in creating sleek and high-performance mobile applications using Google Flutter. 
+               I have the expertise to develop robust and visually appealing mobile apps that work seamlessly 
+               on both Android and iOS platforms.</p>
+            <p>From concept to deployment, I ensure that your app is user-friendly, engaging, and tailored to your brand. 
+                Let us bring your ideas to life and create a cutting-edge mobile experience together.</p>
+               
+        </div>
+        
+        <div class="services-box">
+            <i class="bx bx-code-alt"></i>
+            <h3>Frontend Development</h3>
+            <p>I am proficient in HTML and CSS, which allows me to structure and style web pages effectively. </p>
+            <p> I am capable of utilizing popular JavaScript libraries and frameworks like React or Vue.js to build 
+                complex and interactive user interfaces.I also have experience with AJAX and asynchronous programming, 
+                allowing me to fetch data from APIs and update website content without requiring a page reload.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Portfolio Section design -->
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/weather.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Weather App</h4>
+                <p>This a flutter mobile application that show the location's weather using the Open weather api.</p>
+                <a href="https://github.com/darlingtonhp/Clima-Weather-App">GitHub</a> <i class="bx bx-link-external"> </i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/note.png" alt="">
+            <div class="portfolio-layer">
+                <h4>My Notes App</h4>
+                <p>A secure notebook mobile appliaction that uses Google Firebase authentication and Firebase as a backend option.</p>
+                <a href="https://github.com/darlingtonhp/My-Notes-Flutter-App">GitHub</a> <i class="bx bx-link-external"> </i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/todo.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Todo App</h4>
+                <p>A morden todo mobile application built using Google Flutter and Provider State Management.</p>
+                <a href="https://github.com/darlingtonhp/todo-app">GitHub</a> <i class="bx bx-link-external"> </i></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- contact section design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <Span>Me!</Span></h2>
+    <form>
+        <div class="input-box">
+            <input type="text" id="name" placeholder="Full Name" name="name" required>
+            <input type="email" id="email" placeholder="Your email address" name="email" required>
+        </div>
+        <div class="input-box">
+            <input type="number" id="mobile" placeholder="Mobile number" name="number" required>
+            <input type="text" id="subject" placeholder="Email subject" name="subject" required>
+        </div>
+        <textarea name="" id="body" cols="30" rows="10" placeholder="Your message" name="message" required></textarea>
+        <input onclick="sendEmail()" type="submit" value="Send Message" class="btn" name="submit">
+    </form>
+</section>
+
+<!-- footer design -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Darlington Takunda Hapanamabo | All Rights Reserved.</p>
+    </div>
+    <div class="footer-IconTop">
+        <audio id = "audio2" src="assets/note2.wav"></audio>
+        <a href="#home" onclick="playSound2()"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+</footer>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- typed js -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>     
+
+<!-- custom js -->
+         <script src="js/script.js"></script>
+</body>
+</html>
