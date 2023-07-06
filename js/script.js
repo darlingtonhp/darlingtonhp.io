@@ -60,39 +60,39 @@ const typed = new Typed('.multiple-text', {
     loop: true
 });
 
-// =============sending of email========
-function sendEmail(){
+// // =============sending of email========
+// function sendEmail(e){
+//     e.preventDefault();
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const mobile = document.getElementById('mobile').value;
+//     const subject = document.getElementById('subject').value;
+//     const body = document.getElementById('body').value;
+    
+//     // Check if any of the fields are empty
+//     if (!name || !mobile|| !email || !subject || !body) {
+//         alert('Please fill in all the fields');
+//         return;
+//     }
+    
+//     // Check if the email is valid
+//     if (!isValidEmail(email)) {
+//         alert('Please enter a valid email address');
+//         return;
+//     }
+    
+//     // Send the email
+//     window.open("mailto:hapanamambod@africau.edu?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
+    
+//     // Show success message
+//     alert('Message sent successfully!');
+// }
 
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const mobile = document.getElementById('mobile').value;
-    const subject = document.getElementById('subject').value;
-    const body = document.getElementById('body').value;
-    
-    // Check if any of the fields are empty
-    if (!name || !mobile|| !email || !subject || !body) {
-        alert('Please fill in all the fields');
-        return;
-    }
-    
-    // Check if the email is valid
-    if (!isValidEmail(email)) {
-        alert('Please enter a valid email address');
-        return;
-    }
-    
-    // Send the email
-    window.location.assign("mailto:hapanamambod@africau.edu?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
-    
-    // Show success message
-    alert('Message sent successfully!');
-}
-
-function isValidEmail(email) {
-    // we now use a regular expression to validate the email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
+// function isValidEmail(email) {
+//     // we now use a regular expression to validate the email
+//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//     return emailRegex.test(email);
+// }
 
 // =============Read nore option========
 function readMore(){

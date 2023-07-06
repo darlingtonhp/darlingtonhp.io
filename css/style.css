@@ -18,7 +18,7 @@ that can be used via across multiple sections of the webpage */
 
 :root{
     --bg-color: #040D21;
-    --second-bg-color: #0C162D;
+    --second-bg-color: #010816;
     --text-color: #fff;
     --main-color: hsla(197, 84%, 53%, 0.774);
 }
@@ -58,7 +58,6 @@ section {
     cursor: pointer;
 }
 
-
 .header.sticky{
  border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
@@ -92,10 +91,10 @@ section {
     justify-content: centre;
     align-items: center;
     padding: 2rem 9%;
-    /*background-image: url() repeat-x;
+    /*background-image: url('images/Laptop 01.svg') repeat-x;
     background-size: cover;
     animation: waveAnimation 10s infinite linear;
-*/
+    */
 }
 
 .home-img{
@@ -116,14 +115,15 @@ section {
 
 /*@keyframes waveAnimation{
     0%{
-        background-position-x: 0;
+        background-position: 0 0;
     }
     100%{
-        background-position-x: 100;
+        background-position: 100% 0;
     }
-}*/
+}
+*/
 
-@keyframes floatImage{
+ @keyframes floatImage{
 0%{
     transform: translateY(0);
 }
@@ -356,7 +356,7 @@ span{
 }
 
 .portfolio-layer p{
-    color: black;
+    color: var(--text-color);
 }
 
 .portfolio-layer h4{
@@ -373,41 +373,26 @@ span{
     margin-bottom: 3rem;
 }
 
-.contact form{
+.contact{
     text-align: center;
     margin: 1rem auto;
     max-width: 70rem;
     margin-bottom: 3rem;
 }
 
-.contact form .input-box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contact p{
+    font-size: 1.7rem;
+    text-transform: uppercase;
 }
 
-.contact form .input-box input, 
-.contact form textarea{
-    padding: 1.5rem;
-    width: 100%;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--second-bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .input-box input{
-    width: 49%;
-}
-
-.contact form textarea{
-    resize: none;
-}
-
-.contact form .btn{
-    cursor: pointer;
+.contact h4{
     margin-top: 2rem;
+    font-size: 1.9rem;
+}
+
+.contact h3{
+    margin-top: 0.5rem;
+    font-size: 1.9rem;
 }
 
 .footer{
