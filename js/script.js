@@ -82,7 +82,7 @@ function sendEmail(){
     }
     
     // Send the email
-    window.location.assign("mailto:hapanamambo@africau.edu?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
+    window.location.assign("mailto:hapanamambod@africau.edu?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body));
     
     // Show success message
     alert('Message sent successfully!');
