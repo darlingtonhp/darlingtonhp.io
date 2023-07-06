@@ -92,14 +92,15 @@ section {
     justify-content: centre;
     align-items: center;
     padding: 2rem 9%;
-    background-image: url() repeat-x;
+    /*background-image: url() repeat-x;
     background-size: cover;
     animation: waveAnimation 10s infinite linear;
+*/
 }
 
 .home-img{
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -113,14 +114,14 @@ section {
 }
 
 
-@keyframes waveAnimation{
+/*@keyframes waveAnimation{
     0%{
         background-position-x: 0;
     }
     100%{
         background-position-x: 100;
     }
-}
+}*/
 
 @keyframes floatImage{
 0%{
