@@ -8,15 +8,39 @@
     <style>
         /* Reset and base styling */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Open Sans', Arial, sans-serif; color: #333; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #B0D1E9; margin: 0; overflow: hidden; }
-
-        /* Container styling */
-        .container { text-align: center; max-width: 600px; padding: 40px; background:#B0D1E9; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); border-radius: 12px; position: relative; z-index: 1; }
+        body { 
+            font-family: 'Open Sans', Arial, sans-serif; 
+            color: #333; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            background: #B0D1E9; 
+            margin: 0; 
+            overflow: hidden; 
+            flex-direction: column; 
+            position: relative; 
+        }
 
         /* Header styling */
-        h1 { font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: 700; color: #226D7A; margin-bottom: 20px; }
-        p { font-size: 18px; line-height: 1.6; color: #39787A; margin-bottom: 30px; }
-        
+        h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 36px; 
+            font-weight: 700; 
+            color: #226D7A; 
+            margin-bottom: 20px; 
+            text-align: center; 
+            z-index: 1;
+        }
+        p { 
+            font-size: 18px; 
+            line-height: 1.6; 
+            color: #39787A; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            z-index: 1;
+        }
+
         /* Loader animation */
         .loader { 
             border: 6px solid #f3f3f3; /* Light grey */
@@ -26,6 +50,7 @@
             height: 60px;
             animation: spin 1.5s linear infinite;
             margin: 0 auto 30px;
+            z-index: 1;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
@@ -33,21 +58,31 @@
         }
 
         /* Footer with social links */
-        .footer { margin-top: 20px; }
+        .footer { 
+            text-align: center; 
+            z-index: 1; 
+        }
         .footer a {
-            color: #3498db; text-decoration: none; font-weight: 700; transition: color 0.3s;
+            color: #3498db; 
+            text-decoration: none; 
+            font-weight: 700; 
+            transition: color 0.3s;
         }
         .footer a:hover { color: #226d7a; }
-        
-        /* SVG Styling */
-        .background-svg {
+
+        /* Background SVG styling */
+        .background-svg, .clouds-svg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: auto;
             overflow: hidden;
             z-index: 0;
+        }
+        .clouds-svg {
+            bottom: 0;
+            top: unset;
         }
 
         /* Responsive adjustments */
@@ -58,26 +93,29 @@
     </style>
 </head>
 <body>
+    <!-- Circle Background Shapes -->
     <svg class="background-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
         <circle cx="150" cy="80" r="60" fill="#58A8DE" opacity="0.6"/>
         <circle cx="200" cy="110" r="40" fill="#58A8DE" opacity="0.4"/>
         <circle cx="600" cy="70" r="70" fill="#58A8DE" opacity="0.5"/>
         <circle cx="680" cy="130" r="50" fill="#58A8DE" opacity="0.3"/>
-
         <circle cx="50" cy="300" r="8" fill="#3498db" opacity="0.7"/>
         <circle cx="750" cy="350" r="10" fill="#3498db" opacity="0.5"/>
         <circle cx="400" cy="380" r="5" fill="#3498db" opacity="0.8"/>
     </svg>
 
-    <!-- Main content container -->
-    <div class="container">
-        <h1>Awesome Site in The Making</h1>
-        <p>An amazing site is coming to this web address. Stay tuned!</p>
-        <div class="loader"></div>
-       <p>Say hello anytime! <a href="mailto:hapanamambod@africau.edu">Drop me a message</a>—I’d love to hear from you! 😍</p>
-        <div class="footer">
-            <a href="https://github.com/darlingtonhp">Github</a> | <a href="https://linkedin.com/in/darlingtonhp">LinkedIn</a> | <a href="https://x.com/_darlingtonhp">X</a>
-        </div>
+    <!-- Cloud Background Shape -->
+    <svg class="clouds-svg" id="f95fc14d-9eb7-4d11-bcb9-651fb6dd69f0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2074.144 292.377">
+        <path d="M2034.093,187.309a40.338,40.338,0,0,0-6.537.579,57.445,57.445,0,0,0-101.344-53.826,39.917,39.917,0,0,0-53.631-9.69,57.478,57.478,0,0,0-76.107-65.161c.019-.589.045-1.175.045-1.767a57.443,57.443,0,1,0-114.885,0,58.165,58.165,0,0,0,.412,6.781,39.929,39.929,0,0,0-62.076,39.726,57.431,57.431,0,0,0-89.212,45.7,57.427,57.427,0,0,0-52.738,8.725,39.97,39.97,0,0,0-68.167-16.906c.043-.757.114-1.507.114-2.276a40.049,40.049,0,0,0-65.428-30.986,57.445,57.445,0,0,0-113.6,12.12c0,1.258.055,2.5.134,3.739a39.956,39.956,0,0,0-36.784,6.689,40.715,40.715,0,0,0,.212-4.139A40.019,40.019,0,0,0,1132.73,93a57.443,57.443,0,0,0-106.758-39.516,40.05,40.05,0,0,0-79.081,4.36,40.116,40.116,0,0,0-38.16.022c0-.139.011-.277.011-.417a57.443,57.443,0,1,0-114.474,6.781,39.929,39.929,0,0,0-62.076,39.726,57.431,57.431,0,0,0-89.212,45.7,57.427,57.427,0,0,0-52.738,8.725,39.97,39.97,0,0,0-68.167-16.906c.043-.757.114-1.507.114-2.276a40.049,40.049,0,0,0-65.428-30.986,57.445,57.445,0,0,0-113.6,12.12c0,1.258.055,2.5.134,3.739a39.956,39.956,0,0,0-36.784,6.689,40.715,40.715,0,0,0,.212-4.139A40.019,40.019,0,0,0,244.952,93,57.443,57.443,0,0,0,138.194,53.479a40.05,40.05,0,0,0-79.081,4.36A40.066,40.066,0,0,0,0,93.074v199.3H2074.144V227.363A40.052,40.052,0,0,0,2034.093,187.309Z" fill="#fff"></path>
+    </svg>
+
+    <!-- Main content -->
+    <h1>Awesome Site in The Making</h1>
+    <p>An amazing site is coming to this web address. Stay tuned!</p>
+    <div class="loader"></div>
+    <p>Say hello anytime! <a href="mailto:hapanamambod@africau.edu">Drop me a message</a>—I’d love to hear from you! 😍</p>
+    <div class="footer">
+        <a href="https://github.com/darlingtonhp">Github</a> | <a href="https://linkedin.com/in/darlingtonhp">LinkedIn</a> | <a href="https://x.com/_darlingtonhp">X</a>
     </div>
 </body>
 </html>
